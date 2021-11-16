@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">    
+</head>
+<body>
+    <div class="wrapper">
+        <section class="contacts-section">
+            <a href="#" class="telegram-link">
+                <img src="img/icons/telegram-icon.svg" alt="telegram-link" class="telegram-icon">
+            </a>
+            <a href="#" class="viber-link">
+                <img src="img/icons/viber-icon.svg" alt="viber-link" class="viber-icon">
+            </a>
+            <a href="#" class="phone-link-item">
+                <img src="img/icons/phone-icon.svg" alt="phone-link-item" class="phone-icon">
+            </a>
+            <a href="tel:+380970000000" class="phone-link-number">097 000 00 00</a>
+        </section>
+
+        <section class="account-section">
+        <img src="img/my-photo.jpg" alt="My photo" class="my-photo">
+        <div>
+            <a href="https://www.linkedin.com/">
+                <img src="img/icons/linkedin-icon.svg" alt="My linkedin link" class="icon linkedin-icon">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="img/icons/fb-icon.svg" alt="My facebook link" class="icon">
+            </a>
+        </div>
+        <div class="account-description">
+            <p class="account-description-text account-description-text-first">@alina.grey</p>
+            <p class="account-description-text">79 posts <br>1387 followers <br>160 following</p>
+        </div>
+        </section> 
+
+        <section class="my-info-section">
+            <h2 class="my-name">Привет! Я - Алина Грей</h2>
+            <h1 class="my-profession">Я блогер и создаю курсы</h1>
+            <p class="my-location">Живу в Киеве</p>
+            <p class="my-workstyle">Мне 25 лет</p>
+            <p class="my-description">Занимаюсь любимым делом, имею много хобби и хочу показать вам чусочек моей жизни!</p>
+            <div>
+                <p class="my-skills-title">Увлекаюсь:</p>
+                <ul class="my-skills-list">
+                    <li class="my-skills-item ">
+                       <p class="my-skills-text">Программированием;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Танцами;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Рисованием масляными красками;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Моделингом.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project-price-section">
+
+            <form action="#" class="project-price-form" method="POST" name="contact" data-netlify="true" id="project-price-form">
+                <h4 class="project-price-title">Расчитай цену на мой курс</h4>
+                <div class="project-type-container">
+                    <label for="project-type" class="project-price-form-field-title" id="project-price-form">Пакет</label>
+                    <select name="project-type" id="project-type" class="project-price-select">
+                        <option selected value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="golden">Golden</option>
+                        <option value="brilliant">Brilliant</option>
+                    </select>
+                </div>
+
+                <div class="activity-type-container">
+                    <p class="project-price-form-field-title">Тип работ</p>
+                    <div class="activity-type-item">
+                        <input type="checkbox" name="project-management" id="project-management" class="activity-type-checkbox">
+                        <label for="project-management" class="activity-type-title">Project Management</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input type="checkbox" name="design" id="design" class="activity-type-checkbox">
+                        <label for="design" class="activity-type-title">Design</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input type="checkbox" name="languages" id="languages" class="activity-type-checkbox">
+                        <label for="languages" class="activity-type-title">Languages</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input type="checkbox" name="modeling" id="modeling" class="activity-type-checkbox">
+                        <label for="modeling" class="activity-type-title">Modeling</label>
+                    </div>
+                </div>
+
+                <div class="project-price-container">
+                    <p class="project-price-form-field-title">Стоимость</p>
+                    <p class="project-price-sum"><span class="project-price-sum-currency">UAH</span> <span id="total-price">0</span></p>
+                </div>
+
+                <input type="hidden" name="email">
+
+                <div class="project-price-calculate-button-container">
+                    <button class="project-price-calculate-button">Отправить запрос</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <div class="modal-background" id="modal-email">
+        <div class="modal-container">
+            <button class="modal-close-button"> 
+                <img src="img/icons/close-icon.svg" alt="close-icon">
+            </button>
+            <img src="img/icons/mail-icon.svg" alt="mail-icon" class="modal-icon">
+            <h4 class="modal-title">С вами свяжуться на <br> протяжении ближайшего часа</h4>
+            <form action="#" class="modal-container-form" id="modal-email-container">
+                <div class="email-input-container" id="email-input-container">
+                    <label for="user-email" class="user-email-title">Email</label>
+                    <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Укажите email">
+                    <p class="email-error-text">Проверьте email</p>
+                </div>
+
+                <button type="submit" class="modal-submit-button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-background" id="success-modal">
+        <div class="modal-container modal-container-success">
+            <button class="modal-close-button"> 
+                <img src="img/icons/close-icon.svg" alt="close-icon">
+            </button>
+            <img src="img/icons/success-icon.svg" alt="success-icon" class="modal-success-icon">
+            <p class="modal-success-message">Ваше сообщение <br> отправлено!</p>
+            <p class="modal-recall-message">Ожидайте, вам перезвонят</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <div class="posts-container">
+        <section class="posts-section">
+            <div class="posts-icon-title">
+                <img src="img/icons/posts-icon.svg" alt="My posts" class="posts-icon">
+                <p class="posts-title">POSTS</p>
+            </div>
+        </section>
+
+        <section class="photos-section">
+            <div class="posts-section-photos-1">
+                <a href="#"><img src="img/1.jpg" alt="photo 1" class="photo-section-1 photo-1"></a>
+                <a href="#"><img src="img/2.jpg" alt="photo 2" class="photo-section-1 photo-2"></a>
+                <a href="#"><img src="img/3.jpg" alt="photo 3" class="photo-section-1"></a>
+            </div>
+
+            <div class="posts-section-photos-2">
+                <a href="#"><img src="img/4.jpg" alt="photo 4" class="photo-section-2 photo-4"></a>
+                <a href="#"><img src="img/5.jpg" alt="photo 5" class="photo-section-2 photo-5"></a>
+                <a href="#"><img src="img/6.jpg" alt="photo 6" class="photo-section-2"></a>
+            </div>
+
+            <div class="posts-section-photos-3">
+                <a href="#"><img src="img/7.jpg" alt="photo 7" class="photo-section-3 photo-7"></a>
+                <a href="#"><img src="img/8.jpg" alt="photo 8" class="photo-section-3 photo-8"></a>
+                <a href="#"><img src="img/9.jpg" alt="photo 9" class="photo-section-3"></a>
+            </div>
+
+            <div class="posts-section-photos-4">
+                <a href="#"><img src="img/10.jpg" alt="photo 10" class="photo-section-4 photo-10"></a>
+                <a href="#"><img src="img/11.jpg" alt="photo 11" class="photo-section-4 photo-11"></a>
+                <a href="#"><img src="img/12.jpg" alt="photo 12" class="photo-section-4"></a>
+            </div>
+
+            <div class="posts-section-photos-5">
+                <a href="#"><img src="img/13.jpg" alt="photo 13" class="photo-section-5 photo-13"></a>
+                <a href="#"><img src="img/14.jpg" alt="photo 14" class="photo-section-5 photo-14"></a>
+                <a href="#"><img src="img/15.jpg" alt="photo 15" class="photo-section-5"></a>
+            </div>
+
+            <div class="posts-section-photos-6">
+                <a href="#"><img src="img/1.jpg" alt="photo 16" class="photo-section-6 photo-16"></a>
+                <a href="#"><img src="img/2.jpg" alt="photo 17" class="photo-section-6 photo-17"></a>
+                <a href="#"><img src="img/3.jpg" alt="photo 18" class="photo-section-6"></a>
+            </div>
+
+            <div class="posts-section-photos-7">
+                <a href="#"><img src="img/4.jpg" alt="photo 19" class="photo-section-7 photo-19"></a>
+                <a href="#"><img src="img/5.jpg" alt="photo 20" class="photo-section-7 photo-20"></a>
+                <a href="#"><img src="img/6.jpg" alt="photo 21" class="photo-section-7"></a>
+            </div>
+
+            <div class="posts-section-photos-8">
+                <a href="#"><img src="img/7.jpg" alt="photo 22" class="photo-section-8 photo-22"></a>
+                <a href="#"><img src="img/8.jpg" alt="photo 23" class="photo-section-8 photo-23"></a>
+                <a href="#"><img src="img/9.jpg" alt="photo 24" class="photo-section-8"></a>
+            </div>
+
+            <div class="posts-section-photos-9">
+                <a href="#"><img src="img/10.jpg" alt="photo 25" class="photo-section-9 photo-25"></a>
+                <a href="#"><img src="img/11.jpg" alt="photo 26" class="photo-section-9 photo-26"></a>
+                <a href="#"><img src="img/12.jpg" alt="photo 27" class="photo-section-9"></a>
+            </div>
+
+            <div class="posts-section-photos-10">
+                <a href="#"><img src="img/13.jpg" alt="photo 28" class="photo-section-10 photo-28"></a>
+                <a href="#"><img src="img/14.jpg" alt="photo 29" class="photo-section-10 photo-29"></a>
+                <a href="#"><img src="img/15.jpg" alt="photo 30" class="photo-section-10"></a>
+            </div>
+        </section>
+    </div>
+    
+
+</body>
+</html>

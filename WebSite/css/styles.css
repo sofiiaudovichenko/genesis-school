@@ -1,0 +1,488 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F3F5F9;
+
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+.contacts-section {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.telegram-icon, .viber-icon, .phone-icon {
+    width: 18px;
+    height: 18px;
+    text-decoration: none;
+}
+
+.telegram-icon, .viber-icon {
+    margin-right: 10px;
+}
+
+.phone-icon {
+    margin-right: 20px;
+}
+
+.phone-link-number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.account-section {
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.my-photo {
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.linkedin-icon {
+    margin-right: 15px;
+}
+
+.account-description {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.account-description-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.account-description-text-first {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.technologies-container {
+    margin-bottom: 50px;
+}
+
+.js-icon, .react-icon {
+    margin-right: 15px;
+}
+
+.js-icon, .react-icon, .nodejs-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.my-projects-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E71352;
+    text-decoration-line: underline;
+}
+
+.my-info-section {
+    width: 33%;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.my-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    margin-bottom: 30px;
+}
+
+.my-profession {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #333333;
+    margin-bottom: 35px;
+}
+
+.my-location ,.my-workstyle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #2F80ED;
+    padding: 5px 15px;
+}
+
+.my-workstyle {
+    margin-bottom: 100px;
+}
+
+.my-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    margin-bottom: 15px;
+}
+
+.my-skills-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.my-skills-list {
+    list-style-type: disc;
+    padding-left: 18px;
+}
+
+.my-skills-item {
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F80ED;
+}
+
+.my-skills-text {
+    color: #4F4F4F;
+}
+
+.project-price-section {
+    width: 33%;
+}
+
+.project-price-form {
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+
+.project-price-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F80ED;
+    margin-bottom: 50px;
+}
+
+.project-type-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.project-price-form-field-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.project-price-select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #4F4F4F;
+    padding-bottom: 8px;
+}
+
+.activity-type-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.activity-type-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.activity-type-checkbox {
+    width: 18px;
+    height: 18px;
+    background: #2F80ED;
+}
+
+.activity-type-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    margin-left: 20px;
+}
+
+.project-price-sum-currency {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F80ED;
+    margin-right: 5px;
+}
+
+.project-price-sum {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.project-price-calculate-button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.project-price-calculate-button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #2F80ED;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    padding: 12px 32px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(51 51 51 / 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.modal-active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+.modal-container {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;    
+    padding: 110px 40px;
+    width: 360px;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F80ED;
+    margin-bottom: 40px;
+}
+
+.user-email-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    width: 100%;
+}
+
+.modal-container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.user-email {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #4F4F4F;
+}
+
+.email-input-container {
+    margin-bottom: 115px;
+    height: 115px;
+}
+
+.email-error-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #E71352;
+    margin-top: 10px;
+    display: none;
+}
+
+.email-input-container-error .email-error-text{
+    display: block;
+}
+
+.email-input-container-error .user-email{
+    border-bottom: 1px solid #E71352;
+}
+
+.modal-submit-button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #2F80ED;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    padding: 12px 32px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.modal-icon {
+    margin-bottom: 35px;
+}
+
+.modal-close-button {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.modal-container-success {
+    justify-content: center;
+}
+
+.modal-success-icon {
+    margin-bottom: 40px;
+}
+
+.modal-success-message {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F80ED;
+    margin-bottom: 20px;
+}
+
+.modal-recall-message {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #153E74;
+}
+
+.posts-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #4F4F4F;
+}
+
+.posts-icon-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.posts-icon {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.posts-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333
+}
+
+.posts-section-photos-1, .posts-section-photos-2, .posts-section-photos-3, .posts-section-photos-4, .posts-section-photos-5, .posts-section-photos-6, .posts-section-photos-7, .posts-section-photos-8, .posts-section-photos-9, .posts-section-photos-10 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.photo-section-1, .photo-section-2, .photo-section-3, .photo-section-4, .photo-section-5, .photo-section-6, .photo-section-7, .photo-section-8, .photo-section-9, .photo-section-10 {
+    width: 265px;
+    height: 265px;
+}
+
+.photo-1, .photo-2, .photo-4, .photo-5, .photo-7, .photo-8, .photo-10, .photo-11, .photo-13, .photo-14, .photo-16, .photo-17, .photo-19, .photo-20, .photo-22, .photo-23, .photo-25, .photo-26, .photo-28, .photo-29 {
+    margin-right: 25px;
+}
+
+.photo-section-10 {
+    margin-bottom: 50px;
+}
